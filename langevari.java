@@ -57,16 +57,36 @@ public class langevari {
 		
 	}
 		 
-
+public static void vulkaan(){
+	Random randomno=new Random();
+	
+	int suv=randomno.nextInt(100);
+	if (suv==13){
+		
+		System.out.println("Saa kuuled selja tagant tohutult valju plahvatust.");
+		try{
+			TimeUnit.MILLISECONDS.sleep(1300);
+			}
+			catch (InterruptedException e){
+				System.out.println("");;
+			}
+		System.out.println("†mber pššrates saad aru, et vulkaan on hakanud purskama.\n Viie sekundi jooksul kattud kuuma tuhaga.\n "
+				+ "MŠngumeistritel sai sust k›rini.\n Game Over.");
+	}
+	
+	
+	
+	
+}
 		
 	
 	
 	
 	
 	public static void main(String[] args) {
-		langevari();
-		metsamari();
-		// TODO Auto-generated method stub
+		//langevari();
+		//metsamari();
+		vulkaan();
 
 	}
 }
